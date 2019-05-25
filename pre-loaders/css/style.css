@@ -4,7 +4,16 @@
 	box-sizing: border-box;
 }
 
-.preloader {
+.home {
+	background: url(../img/background.jpg);
+	height: 100vh;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.preload {
 	position: fixed;
 	top:0;
 	width:100%;
@@ -15,6 +24,12 @@
 	justify-content: center;
 }
 
+.preload-finish {
+	opacity: 0;
+	display: none;
+	pointer-events: none;
+}
+
 .airplane {
 	height: 200px;
 	animation: 2s plane ease infinite alternate;
@@ -22,30 +37,30 @@
 
 .cloud1, .cloud2, .cloud3, .cloud4 {
 	position: absolute;
-	height: 200px;
+	height: 184px;
 	right: -30%;
 	z-index: -1;
 }
 
 .cloud1 {
-	top:5%;
-	transform:translateX(100%, -5%);
+	top:1%;
+	transform:translateX(100%, -2%);
 	animation: cloud 3s infinite ;
 }
 .cloud2 {
-	top:30%;
-	transform:translateX(100%, -30%);
+	top:26%;
+	transform:translateX(100%, -20%);
 	animation: cloud 3s infinite 2s;
 }
 
 .cloud3 {
-	top:55%;
+	top:51%;
 	transform:translateX(100%, -55%);
 	animation: cloud 3s infinite 2.5s;
 }
 .cloud4 {
-	top:80%;
-	/*transform:translateX(100%, -75%);*/
+	top:76%;
+	transform:translateX(100%, -75%);
 	animation: cloud 3s infinite 1s;
 	/*transform:rotateX(180deg);*/
 }
