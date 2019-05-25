@@ -32,7 +32,17 @@
 
 .airplane {
 	height: 200px;
-	animation: 2s plane ease infinite alternate;
+	transform: translateY(-250px);
+	animation: plane 2s ease infinite alternate;
+}
+
+.landing {
+	position:absolute;
+	top:67%;
+	transform: translate(-20%, -67%);
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #fff;
 }
 
 .cloud1, .cloud2, .cloud3, .cloud4 {
@@ -45,12 +55,12 @@
 .cloud1 {
 	top:1%;
 	transform:translateX(100%, -2%);
-	animation: cloud 3s infinite ;
+	animation: cloud 3s infinite;
 }
 .cloud2 {
 	top:26%;
 	transform:translateX(100%, -20%);
-	animation: cloud 3s infinite 2s;
+	animation: cloud 3s infinite 1.5s;
 }
 
 .cloud3 {
@@ -76,9 +86,9 @@
 
 @keyframes plane {
 	from {
-		transform: translateY(0px);
+		transform: translateY(-25px);
 	}
 	to {
-		transform: translateY(50px);
+		transform: translateY(25px);
 	}
 }
