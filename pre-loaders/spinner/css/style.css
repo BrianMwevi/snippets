@@ -20,9 +20,10 @@
 	height: 120px;
 	width:120px;
 	border-radius: 50%;
-	border-top: 15px solid #eee;
-	animation: spinner 4s linear infinite;
-	border-bottom:15px solid  white;
+	/*border-top: 15px solid black;*/
+	border-top: 15px solid black;
+	border-bottom: 15px solid green;
+	animation: spinner 4s ease-in-out infinite alternate;
 
 }
 
@@ -30,28 +31,40 @@
 	position: absolute;
 	height: 85px;
 	width: 85px;
-	background: grey;
-	border-left: 25px solid #eee;
+	border-top: 15px solid white;
+	border-bottom: 15px solid white;
 	border-radius: 50%;
-	animation: spinners 5s linear infinite alternate;
+	animation: spinners 4s ease-in-out infinite alternate;
 }
 
 @keyframes spinner {
 	0% {
 		transform: rotate(0deg);
+	}
 
+	50% {
+		border-top: 15px solid #eee;
+		border-bottom: 15px solid black;
 	}
 	100% {
-		transform: rotate(1080deg);
-		border-bottom:15px solid  #eee;
+		transform: rotate(1440deg);
+		
 	}
 }
 
 @keyframes spinners {
 	0%{
-		transform: scale(0.5, 0.5);
+		background: rgba(0,0,0,.1);
+		background: red;
+	}
+	50% {
+		border:none;
+		transform: rotate(-1440deg);
+		background: linear-gradient(to right, black, white );
 	}
 	100% {
-		background: transparent;
-		transform: scale(0.2,0.2);
+		transform: scale(0.2,.2);
+		background: red;
+
+
 	}
