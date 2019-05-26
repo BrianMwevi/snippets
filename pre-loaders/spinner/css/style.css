@@ -3,16 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-/*
-.home {
-	background: url(../img/background.jpg);
-	height: 100vh;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-*/
+
 .preload {
 	position: fixed;
 	top:0;
@@ -26,11 +17,11 @@
 
 .spinner {
 	position:absolute;
-	height: 150px;
-	width:150px;
+	height: 120px;
+	width:120px;
 	border-radius: 50%;
 	border-top: 15px solid #eee;
-	animation: spinner 4s linear infinite alternate;
+	animation: spinner 4s linear infinite;
 	border-bottom:15px solid  white;
 
 }
